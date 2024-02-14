@@ -1,7 +1,7 @@
 export default {
    names: ['Main Menu'],
    tags: ['menu'],
-   command: ['menu', 'help', 'allmenu', 'command', 'm', 'all', '.menu'],
+   command: ['menu', 'help', 'allmenu', 'command', 'm', 'all'],
    start: async (m, {
       conn,
       prefix,
