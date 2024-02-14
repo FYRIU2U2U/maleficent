@@ -1,7 +1,7 @@
 export default {
    names: ['Main Menu'],
    tags: ['menu'],
-   command: ['menu', 'help', 'allmenu', 'command', 'm', 'all'],
+   command: ['menu', 'help', 'allmenu', 'command', 'm', 'all', '.menu'],
    start: async (m, {
       conn,
       prefix,
@@ -25,7 +25,7 @@ export default {
       info += `👤 Owner @${num.split('@')[0]}\n`
       info += ` 📸 Instagram: ${sosmed}\n\n`
       info += ` _Network Bot Usage_ :\n📥 Download: ${Download}\n📤 Upload: ${Upload}\n\n${jembut}`
-      m.react('🐽', m.chat)
+      m.react('👌', m.chat)
       let { menu } = await Format.Plugins(header, middle, pointer, bottom, prefix);
       let picture = await User.profilePicture(conn, m)
       m.adsReply(`${info}\n\n${menu}`, picture, m.chat)
